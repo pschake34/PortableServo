@@ -1,3 +1,6 @@
+//Portable Motorman
+//Paul and Ben and Johnny
+
 #include <Servo.h>
 
 Servo myServo;
@@ -5,10 +8,6 @@ Servo myServo;
 int btnPin = 2;
 int bbtnPin = 3;
 int servoPin = 11;
-//Portable Motorman
-//Paul and Ben and Johnny
-
-
 int btnState;
 int bbtnState;
 int motorman = 90;
