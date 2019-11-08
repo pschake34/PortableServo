@@ -1,19 +1,21 @@
 //Portable Motorman
 //Paul and Ben and Johnny
+//Code for Portable Button-controlled Servo
 
 #include <Servo.h>
 
 Servo myServo;
 
-int btnPin = 2;
-int bbtnPin = 3;
+
+int btnPin = 2;    //button turns servo clockwise
+int bbtnPin = 3;   //button turns servo counterclockwise
 int servoPin = 11;
-int btnState;
-int bbtnState;
+int btnState;     //ButtonState1
+int bbtnState;    //ButtonState2
+//Servo
 int motorman = 90;
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   myServo.attach(servoPin);
   pinMode(btnState, INPUT);
@@ -22,23 +24,25 @@ void setup() {
 
 }
 void loop() {
-  Serial.println(btnState);
-  Serial.println(bbtnState);
   btnState = digitalRead(btnPin);
   bbtnState = digitalRead(bbtnPin);
-  Serial.println(motorman);
   myServo.write(motorman);
   
-  if (btnState == HIGH) {
+  //print debug info to console 
+  Serial.println(btnState);
+  Serial.println(bbtnState);
+  Serial.println(motorman);
+ 
+  if (btnState == HIGH) { //switches direction to clockwise
     motorman = 100;
 
   }
   
-  else if (bbtnState == HIGH) {
+  else if (bbtnState == HIGH) { //switches direction to counterclockwise
     motorman= 80;
   }
   
-  else {
+  else { //makes servo stop
     motorman = 90;
   }
 
