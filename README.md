@@ -10,4 +10,5 @@ but with some work you could change the cad files so that you can bend the acryl
 arduino enclosure, you will want to assemble the wiring for the arduino and screw in the buttons, servo and battery holder. After putting on
 the top, you are done! 
 
-![Picture of finished product](https://github.com/pschake34/PortableServo/blob/master/IMG_0084%20(1).JPG)
+![Picture of finished product](https://github.com/pschake34/PortableServo/blob/master/IMG_0084%20.JPG)
+Picture of finished product
