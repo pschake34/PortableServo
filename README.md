@@ -11,4 +11,5 @@ arduino enclosure, you will want to assemble the wiring for the arduino and scre
 the top, you are done! 
 
 ![Picture of finished product](https://github.com/pschake34/PortableServo/blob/master/IMG_0084.JPG)
-Picture of finished product
+
+Upside Down Picture of Finished Product
